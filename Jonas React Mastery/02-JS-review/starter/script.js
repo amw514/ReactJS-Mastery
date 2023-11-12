@@ -142,3 +142,34 @@ function getBooks() {
 function getBook(id) {
   return data.find((d) => d.id === id);
 }
+
+const book = getBook(1);
+
+let { title, author, publicationDate, newEl = "changes", genres } = book;
+
+console.log(title);
+console.log(author);
+console.log(publicationDate);
+console.log(newEl);
+console.log(genres);
+
+const [genres1, genres2, ...otherGenres] = genres;
+
+console.log(genres1);
+console.log(genres2);
+console.log(otherGenres[0]);
+console.log(otherGenres[1]);
+console.log(otherGenres[2]);
+
+function sum(...args) {
+  let sum = 0;
+
+  for (let arg of args) sum += arg;
+
+  return sum;
+}
+
+console.log(sum(3, 4, 35, 3, 53, 42, 45, 24, 52, 452, 4, 234, 2, 53, 45));
+
+const updatedBook = { ...book, moviePublicationDate: "2001-12-19" };
+console.log(updatedBook);
