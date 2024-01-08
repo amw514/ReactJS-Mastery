@@ -1,54 +1,40 @@
+import img1 from "./images/book-1.jpg";
+import img2 from "./images/book-2.jpg";
+
+const books = [
+  {
+    author: "Morgan Housel",
+    title: "The psychology of money",
+    img: img1,
+    key: 1,
+  },
+  {
+    author: "James Clear",
+    title: "Atomic Habits",
+    img: img2,
+    key: 2,
+  },
+];
+
 function BookList() {
   return (
     <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      {books.map((book) => {
+        const { img, title, author, key } = book;
+        return <Book {...book} key={key.id} />;
+      })}
     </section>
   );
 }
+function Book(props) {
+  const { img, title, author } = props;
 
-function Book() {
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src={img} alt={title} />
+      <h2>{title}</h2>
+      <h4>{author.toUpperCase()}</h4>
     </article>
-  );
-}
-
-function Image() {
-  return (
-    <>
-      <img
-        src="https://m.media-amazon.com/images/I/71TRUbzcvaL._SY466_.jpg"
-        alt="The Psychology of Money"
-      />
-    </>
-  );
-}
-
-function Title() {
-  return (
-    <>
-      <h2>The Psychology of Money</h2>
-    </>
-  );
-}
-
-function Author() {
-  const inlineHeadingStyles = {
-    color: "#617d98",
-    fontSize: "0.75rem",
-    marginTop: "0.5rem",
-  };
-
-  return (
-    <>
-      <h4 style={inlineHeadingStyles}>Morgan Housel</h4>
-    </>
   );
 }
 
