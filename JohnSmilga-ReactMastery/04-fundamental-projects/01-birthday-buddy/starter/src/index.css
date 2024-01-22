@@ -66,8 +66,8 @@ html {
 
 body {
   background: var(--backgroundColor);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   line-height: 1;
   color: var(--textColor);
@@ -127,9 +127,9 @@ ul {
 }
 
 .img {
-  width: 100%;
   display: block;
   object-fit: cover;
+  margin: 1rem 0 2rem 2rem;
 }
 /* buttons */
 
@@ -291,7 +291,7 @@ main {
   margin-bottom: 1.5rem;
   align-items: center;
 }
-.person img {
+img {
   width: 75px;
   height: 75px;
   border-radius: 50%;
