@@ -1,6 +1,6 @@
 import React from "react";
 
-function Tour({ id, image, info, name, price }) {
+function Tour({ id, image, info, name, price, removeTours }) {
   return (
     <article className="single-tour">
       <img src={image} alt={name} className="img" />
@@ -8,6 +8,12 @@ function Tour({ id, image, info, name, price }) {
       <div className="tour-info">
         <h5>{name}</h5>
         <p>{info}</p>
+        <button
+          className="btn btn-block delete-btn"
+          onClick={() => removeTours(id)}
+        >
+          remove
+        </button>
       </div>
     </article>
   );
