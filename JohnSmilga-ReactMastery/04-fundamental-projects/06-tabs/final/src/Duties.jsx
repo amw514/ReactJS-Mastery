@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+import  { v4 as uuidv4 } from 'uuid';
 
 import { FaAngleDoubleRight } from 'react-icons/fa';
 const Duties = ({ duties }) => {
