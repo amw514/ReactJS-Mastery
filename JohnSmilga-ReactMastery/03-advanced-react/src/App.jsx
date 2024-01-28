@@ -1,4 +1,4 @@
-import Starter from "./tutorial/03-conditional-rendering/starter/01-multiple-returns-basics";
+import Starter from "./tutorial/06-forms/starter/01-controlled-inputs";
 
 function App() {
   return (
