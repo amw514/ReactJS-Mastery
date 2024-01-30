@@ -1,4 +1,8 @@
-function UserContainer({ user, logout }) {
+import { useContext } from "react";
+import { NavbarContext } from "./Navbar";
+import { useAppContext } from "./Navbar";
+const UserContainer = () => {
+  const { user, logout } = useAppContext();
   return (
     <div className="user-container">
       {user ? (
@@ -13,6 +17,5 @@ function UserContainer({ user, logout }) {
       )}
     </div>
   );
-}
-
+};
 export default UserContainer;
