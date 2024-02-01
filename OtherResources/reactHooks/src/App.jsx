@@ -1,10 +1,10 @@
-import UseEffect from "./useEffect/UseEffect";
+import UseContext from "./useContext/UseContext";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <UseEffect />
+      <UseContext />
     </>
   );
 }
