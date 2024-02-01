@@ -1,13 +1,9 @@
-import { useContext } from "react";
-import { NavbarContext } from "./Navbar";
-import { useAppContext } from "./Navbar";
-const UserContainer = () => {
-  const { user, logout } = useAppContext();
+const UserContainer = ({ user, logout }) => {
   return (
     <div className="user-container">
       {user ? (
         <>
-          <p>Hello There, {user.name.toUpperCase()}</p>
+          <p>Hello There, {user.name}</p>
           <button type="button" className="btn" onClick={logout}>
             logout
           </button>
@@ -18,4 +14,5 @@ const UserContainer = () => {
     </div>
   );
 };
+
 export default UserContainer;
