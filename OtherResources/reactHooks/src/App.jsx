@@ -1,10 +1,10 @@
-import UseRef2 from "./useRef/UseRef2";
 import "./App.css";
+import UseMemo from "./useMemo/UseMemo";
 
 function App() {
   return (
     <>
-      <UseRef2 />
+      <UseMemo />
     </>
   );
 }
