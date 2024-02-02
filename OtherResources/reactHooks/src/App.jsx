@@ -1,10 +1,10 @@
 import "./App.css";
-import UseMemo from "./useMemo/UseMemo";
+import UseReducer from "./useReducer/UseReducer";
 
 function App() {
   return (
     <>
-      <UseMemo />
+      <UseReducer />
     </>
   );
 }
