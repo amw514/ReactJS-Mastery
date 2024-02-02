@@ -1,10 +1,10 @@
-import UseContext from "./useContext/UseContext";
+import UseRef from "./useRef/UseRef";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <UseContext />
+      <UseRef />
     </>
   );
 }
