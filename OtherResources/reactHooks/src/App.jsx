@@ -1,10 +1,10 @@
-import UseRef from "./useRef/UseRef";
+import UseRef2 from "./useRef/UseRef2";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <UseRef />
+      <UseRef2 />
     </>
   );
 }
