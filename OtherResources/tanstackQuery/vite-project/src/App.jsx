@@ -19,17 +19,7 @@ function App() {
     queryFn: () => wait(1000).then(() => [...POSTS]),
   });
 
-  const newPostMutation = useMutation({
-    mutationFn: (title) => {
-      return wait(1000).then(() =>
-        POSTS.push({ id: crypto.randomUUID(), title })
-      );
-    },
-    onSuccess: () => {
-      queryClient.invalidateQueries(["posts"]);
-    },
-  });
-
+  \
   if (postsQuery.isLoading) {
     return <h1>Loading...</h1>;
   }
@@ -47,12 +37,7 @@ function App() {
         );
       })}
 
-      <button
-        disabled={newPostMutation.isLoading}
-        onClick={() => newPostMutation.mutate("New Post")}
-      >
-        Add Post
-      </button>
+     
     </>
   );
 }
